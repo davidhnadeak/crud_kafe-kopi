@@ -1,0 +1,115 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0, 50);
+}
+
+/*HEADING TAMBAH TRANSAKSI*/
+h1 {
+    margin-top: 50px;
+    color: lime;
+}
+
+h1:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 10px lime;
+}
+
+/*FORM TAMBAH TRANSAKSI*/
+form {
+    margin-top: 50px;
+
+    table {
+        tr {
+            th {
+                padding: 5px;
+                padding-right: 15px;
+                color: white;
+                text-align: left;
+            }
+
+            td {
+
+                input,
+                select {
+                    padding: 5px;
+                    text-align: center;
+                    border-radius: 4px;
+                    border: 1px solid black;
+                }
+            }
+        }
+
+        tr:hover {
+            text-shadow: 0px 0px 10px lime;
+
+            th {
+                color: lime;
+            }
+        }
+    }
+}
+
+/*MIXIN BUTTON*/
+@mixin button($color) {
+    border: 1px solid $color;
+    border-radius: 5px;
+    color: $color;
+}
+
+@mixin button-hover($background-color, $text-color) {
+    color: $text-color;
+    background-color: $background-color;
+    box-shadow: 0px 0px 5px $background-color, 0px 0px 10px $background-color;
+}
+
+@mixin button-active($color) {
+    opacity: 0.9;
+    box-shadow: 0px 0px 5px $color, 0px 0px 10px $color, 0px 0px 15px $color;
+}
+
+/*BACK BUTTON*/
+.back-button {
+    @include button(aqua);
+    margin-top: 50px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.back-button:hover {
+    @include button-hover(aqua, white);
+}
+
+.back-button:active {
+    @include button-active(aqua);
+}
+
+/*SUBMIT BUTTON*/
+.submit-button {
+    @include button(lime);
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 50);
+}
+
+.submit-button:hover {
+    @include button-hover(lime, white);
+}
+
+.submit-button:active {
+    @include button-active(lime);
+}

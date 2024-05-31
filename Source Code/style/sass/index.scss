@@ -1,0 +1,115 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0, 50);
+    background-image: url(../../images/background_cafe.jpeg);
+}
+
+/*HEADER CONTAINER*/
+.header-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 500px;
+    margin-top: 100px;
+    padding: 10px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    img {
+        width: 100px;
+        border-radius: 100px;
+    }
+
+    img:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 10px white;
+    }
+
+    h1:hover {
+        cursor: pointer;
+        text-shadow: 0px 0px 10px white;
+    }
+}
+
+/*KOPI & TRANSAKSI CONTAINER*/
+.kopi-and-transaksi-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+    margin-top: 50px;
+}
+
+/*MIXIN BUTTON*/
+@mixin button($color, $background-color, $box-shadow) {
+    width: 80px;
+    padding: 10px;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: $color;
+    background-color: $background-color;
+    box-shadow: 0px 0px 5px $box-shadow, 0px 0px 10px $box-shadow, 0px 0px 15px $box-shadow
+}
+
+@mixin button-hover($color) {
+    border: 1px solid $color;
+    box-shadow: 0px 0px 5px $color, 0px 0px 10px $color;
+}
+
+@mixin button-active($color) {
+    opacity: 0.9;
+    box-shadow: 0px 0px 5px $color, 0px 0px 10px $color, 0px 0px 15px $color;
+}
+
+/*KOPI BUTTON*/
+.kopi-button {
+    @include button(black, yellow, black);
+}
+
+.kopi-button:hover {
+    @include button-hover(yellow);
+}
+
+.kopi-button:active {
+    @include button-active(yellow);
+}
+
+/*TRANSAKSI BUTTON*/
+.transaksi-button {
+    @include button(black, aqua, black);
+}
+
+.transaksi-button:hover {
+    @include button-hover(aqua);
+}
+
+.transaksi-button:active {
+    @include button-active(aqua);
+}
+
+/*LOGOUT BUTTON*/
+.logout-button {
+    margin-top: 50px;
+}
+
+.logout-button:hover {
+    text-decoration: underline;
+}
+
+.logout-button:active {
+    opacity: 0.9;
+}

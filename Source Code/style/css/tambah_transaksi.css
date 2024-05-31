@@ -1,0 +1,97 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(0, 0, 50);
+}
+
+/*HEADING TAMBAH TRANSAKSI*/
+h1 {
+  margin-top: 50px;
+  color: lime;
+}
+
+h1:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 10px lime;
+}
+
+/*FORM TAMBAH TRANSAKSI*/
+form {
+  margin-top: 50px;
+}
+form table tr th {
+  padding: 5px;
+  padding-right: 15px;
+  color: white;
+  text-align: left;
+}
+form table tr td input,
+form table tr td select {
+  padding: 5px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+form table tr:hover {
+  text-shadow: 0px 0px 10px lime;
+}
+form table tr:hover th {
+  color: lime;
+}
+
+/*MIXIN BUTTON*/
+/*BACK BUTTON*/
+.back-button {
+  border: 1px solid aqua;
+  border-radius: 5px;
+  color: aqua;
+  margin-top: 50px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.back-button:hover {
+  color: white;
+  background-color: aqua;
+  box-shadow: 0px 0px 5px aqua, 0px 0px 10px aqua;
+}
+
+.back-button:active {
+  opacity: 0.9;
+  box-shadow: 0px 0px 5px aqua, 0px 0px 10px aqua, 0px 0px 15px aqua;
+}
+
+/*SUBMIT BUTTON*/
+.submit-button {
+  border: 1px solid lime;
+  border-radius: 5px;
+  color: lime;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 50);
+}
+
+.submit-button:hover {
+  color: white;
+  background-color: lime;
+  box-shadow: 0px 0px 5px lime, 0px 0px 10px lime;
+}
+
+.submit-button:active {
+  opacity: 0.9;
+  box-shadow: 0px 0px 5px lime, 0px 0px 10px lime, 0px 0px 15px lime;
+}/*# sourceMappingURL=tambah_transaksi.css.map */

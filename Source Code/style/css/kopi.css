@@ -1,0 +1,87 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(0, 0, 50);
+}
+
+/*HEADING KOPI*/
+h1 {
+  margin-top: 50px;
+  color: yellow;
+}
+
+h1:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 10px yellow;
+}
+
+/*TABLE TRANSAKSI*/
+table {
+  margin-top: 50px;
+  text-align: center;
+}
+table thead {
+  background-color: yellow;
+}
+table thead tr th {
+  padding: 15px;
+}
+table tbody {
+  background-color: white;
+}
+table tbody tr td {
+  padding: 15px;
+}
+table tbody tr td.update-column {
+  background-color: rgb(0, 0, 50);
+}
+table tbody tr:hover {
+  background-color: lightgrey;
+}
+
+/*MIXIN BUTTON*/
+/*BACK BUTTON*/
+.back-button {
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  margin-top: 50px;
+  padding: 8px;
+}
+
+.back-button:hover {
+  color: black;
+  background-color: white;
+  box-shadow: 0px 0px 5px white, 0px 0px 10px white;
+}
+
+.back-button:active {
+  opacity: 0.9;
+  box-shadow: 0px 0px 5px white, 0px 0px 10px white, 0px 0px 15px white;
+}
+
+/*UPDATE BUTTON*/
+.update-button {
+  border: 1px solid lime;
+  border-radius: 5px;
+  color: lime;
+  padding: 8px;
+}
+
+.update-button:hover {
+  color: white;
+  background-color: lime;
+  box-shadow: 0px 0px 5px lime, 0px 0px 10px lime;
+}
+
+.update-button:active {
+  opacity: 0.9;
+  box-shadow: 0px 0px 5px lime, 0px 0px 10px lime, 0px 0px 15px lime;
+}/*# sourceMappingURL=kopi.css.map */

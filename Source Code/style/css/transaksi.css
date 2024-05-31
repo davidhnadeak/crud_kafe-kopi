@@ -1,0 +1,112 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(0, 0, 50);
+}
+
+/*HEADING TRANSAKSI*/
+h1 {
+  margin-top: 50px;
+  color: aqua;
+}
+
+h1:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 10px aqua;
+}
+
+/*TABLE TRANSAKSI*/
+table {
+  margin-top: 50px;
+  text-align: center;
+}
+table thead {
+  background-color: aqua;
+}
+table thead tr th {
+  padding: 15px;
+}
+table tbody {
+  background-color: white;
+}
+table tbody tr td {
+  padding: 15px;
+}
+table tbody tr td.delete-column {
+  padding: 15px;
+  background-color: rgb(0, 0, 50);
+}
+table tbody tr:hover {
+  background-color: lightgrey;
+}
+
+/*MIXIN BUTTON*/
+/*BACK BUTTON*/
+.back-button {
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  margin-top: 50px;
+  padding: 8px;
+}
+
+.back-button:hover {
+  color: black;
+  background-color: white;
+  box-shadow: 0px 0px 5px white, 0px 0px 10px white;
+}
+
+.back-button:active {
+  opacity: 0.9;
+  box-shadow: 0px 0px 5px white, 0px 0px 10px white, 0px 0px 15px white;
+}
+
+/*DELETE BUTTON*/
+.delete-button {
+  border: 1px solid red;
+  border-radius: 5px;
+  color: red;
+  padding: 8px;
+}
+
+.delete-button:hover {
+  color: white;
+  background-color: red;
+  box-shadow: 0px 0px 5px red, 0px 0px 10px red;
+}
+
+.delete-button:active {
+  opacity: 0.9;
+  box-shadow: 0px 0px 5px red, 0px 0px 10px red, 0px 0px 15px red;
+}
+
+/*INSERT BUTTON*/
+.insert-button {
+  border: 1px solid lime;
+  border-radius: 5px;
+  color: lime;
+  margin-top: 50px;
+  padding: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.insert-button:hover {
+  color: white;
+  background-color: lime;
+  box-shadow: 0px 0px 5px lime, 0px 0px 10px lime;
+}
+
+.insert-button:active {
+  opacity: 0.9;
+  box-shadow: 0px 0px 5px lime, 0px 0px 10px lime, 0px 0px 15px lime;
+}/*# sourceMappingURL=transaksi.css.map */
